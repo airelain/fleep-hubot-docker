@@ -23,11 +23,10 @@ RUN yo hubot --name="Hubot" --defaults
 # Install fleep adapter
 RUN npm install hubot-fleep --save
 
-# Install githubot and underscore
-RUN npm install githubot underscore --save
+# Install gitlab and underscore
+RUN npm install gitlab underscore --save
 
 # Patch all the stuff
-COPY ./scripts/github-issue-link.coffee ${BOTDIR}/scripts/github-issue-link.coffee
 COPY ./patch/fleep.coffee ${BOTDIR}/node_modules/hubot-fleep/src/fleep.coffee
 
 # Entrypoint
