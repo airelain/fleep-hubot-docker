@@ -1,1 +1,1 @@
-docker build -t airelain/hubot-fleep-gh .
+docker build -t airelain/hubot-fleep-gl .
